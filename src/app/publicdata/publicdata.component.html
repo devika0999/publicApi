@@ -1,0 +1,44 @@
+<app-navbar></app-navbar>
+<br>
+<div class="container">
+    <div class="row g-3">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+            <div class="row">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="cols">API</th>
+                                <th scope="cols">DESCRIPTION</th>
+                                <th scope="cols">AUTH</th>
+                                <th scope="cols">HTTPS</th>
+                                <th scope="cols">CORS</th>
+                                <th scope="cols">LINKS</th>
+                                <th scope="cols">CATEGORY</th>
+                            </tr>
+                        </thead>
+                            <tbody>
+                                <tr *ngFor="let i of publicData.entries">
+                                    <td>{{i.API}}</td>
+                                    <td>{{i.Description}}</td>
+                                    <td>{{i.Auth}}</td>
+                                    <td>{{i.HTTPS}}</td>
+                                    <td>{{i.Cors}}</td>
+                                    <td>{{i.Link}}</td>
+                                    <td>{{i.Category}}</td>
+                                </tr>
+                            </tbody>
+                        
+                    </table>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
